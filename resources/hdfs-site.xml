@@ -1,0 +1,35 @@
+<configuration>
+
+    <!--负数,0代表不开启安全模式,大于等于1代表开启安全模式 -->
+    <property>
+        <name>dfs.safemode.threshold.pct</name>
+        <value>0.1</value>
+    </property>
+    <!--secondnode的地址-->
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>localhost:9868</value>
+    </property>
+    <!-- nn web 端访问地址-->
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>localhost:50070</value>
+    </property>
+    <!-- 指定HDFS副本的数量,默认为3 -->
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+    <!--存储目录-->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///D:/docker/dfs/namenode</value>
+    </property>
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>D:\docker\dfs\datanode</value>
+    </property>
+
+</configuration>
